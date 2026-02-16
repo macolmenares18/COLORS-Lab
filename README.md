@@ -27,7 +27,9 @@ The system utilizes three primary tables within the `COP4331` database:
 ## High-Level Setup Instructions
 
 ### 1. Database Configuration
-Connect to MySQL via terminal (`mysql -u root -p`) and execute the schema creation scripts. Create a dedicated user for the web application to interact with the database safely:
-```sql
-CREATE USER 'TheBeast' IDENTIFIED BY 'WeLoveCOP4331';
-GRANT ALL PRIVILEGES ON COP4331.* TO 'TheBeast'@'%';
+Connect to MySQL via terminal (`mysql -u root -p`) and execute the schema creation scripts. Create a dedicated user for the web application to interact with the database safely.
+
+### 2. How to Run
+* Open a web browser and navigate to your domain or server IP address.   
+* Log in using valid credentials.   
+* Use the interface to add new colors or search your existing collection.
