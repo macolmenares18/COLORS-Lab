@@ -1,0 +1,27 @@
+@startuml
+start
+
+:User navigates to Login Page;
+
+if (Has Account?) then (No)
+  :Navigate to Register Page;
+  :Submit Registration Details;
+  :System creates Account;
+else (Yes)
+endif
+
+:Enter Login Credentials;
+
+if (Credentials Valid?) then (Yes)
+  :View Dashboard;
+  :Enter New Color Name;
+  :Click "Add Color";
+  :System executes AddColor.php API;
+  :Database stores new Color with UserID;
+  :Dashboard UI updates to show new Color;
+else (No)
+  :Display "Invalid Login" Error;
+endif
+
+stop
+@enduml
