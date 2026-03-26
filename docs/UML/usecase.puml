@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor User
+
+rectangle "COLORS Web Application" {
+  usecase "Register Account" as UC1
+  usecase "Login" as UC2
+  usecase "Add Color" as UC3
+  usecase "Search Colors" as UC4
+  usecase "Delete Color" as UC5
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+@enduml
