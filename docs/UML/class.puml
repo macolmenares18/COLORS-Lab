@@ -1,0 +1,22 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class Users {
+  + ID : int [PK]
+  + FirstName : varchar
+  + LastName : varchar
+  + Login : varchar
+  + Password : varchar
+}
+
+class Colors {
+  + ID : int [PK]
+  + Name : varchar
+  + UserId : int [FK]
+}
+
+' The relationship: One User can have zero or many Colors
+Users "1" -- "0..*" Colors : "owns >"
+
+@enduml
