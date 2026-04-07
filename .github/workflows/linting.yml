@@ -24,10 +24,10 @@ jobs:
         run: npm install
 
       - name: Lint HTML
-        run: npx htmlhint "frontend/**/*.html"
+        run: npx htmlhint "public/**/*.html"
 
       - name: Lint CSS
-        run: npx stylelint "frontend/cssstyles/**/*.css"
+        run: npx stylelint "public/css/**/*.css"
 
       - name: Lint JavaScript
-        run: npx eslint "frontend/js/**/*.js"
+        run: npx eslint "public/js/**/*.js"
