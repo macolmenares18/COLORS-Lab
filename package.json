@@ -1,0 +1,30 @@
+{
+  "name": "colors-lab",
+  "version": "1.0.0",
+  "description": "The COLORS application is a full-stack color management system developed across three lab sessions for COP 4331. It allows users to authenticate and maintain a personal database of colors through a web interface. The project demonstrates the implementation and deployment of a full LAMP stack on a remote server.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macolmenares18/COLORS-Lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/macolmenares18/COLORS-Lab/issues"
+  },
+  "homepage": "https://github.com/macolmenares18/COLORS-Lab#readme",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
