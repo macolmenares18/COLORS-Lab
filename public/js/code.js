@@ -181,5 +181,14 @@ function searchColor()
     {
         document.getElementById("color-search-result").innerHTML = err.message;
     }
-    
+}
+
+function validateColorName(color) {
+    if (!color || color.trim().length === 0) return false;
+    if (color.length > 50) return false;
+    return true;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { validateColorName };
 }

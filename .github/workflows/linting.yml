@@ -31,3 +31,6 @@ jobs:
 
       - name: Lint JavaScript
         run: npx eslint "public/js/**/*.js"
+
+      - name: Run Jest Tests
+        run: npm test
